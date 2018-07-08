@@ -23,13 +23,11 @@ echo $tel;*/
 $sql="INSERT INTO users(First_name,Last_name,mail,tel) VALUES ('$First_name','$Last_name','$mail','$tel')";
 
 if($conn->query($sql)===TRUE){
-	echo "Accepted";
+	echo "successfully";
 }
 else{
 	echo "ERROR: ". $sql . "<br>" . $conn->error;
 }
 
 ?>
-<br>
-<a href="http://localhost/mysite/index.html">Go back</a>
 
